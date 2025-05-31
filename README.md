@@ -28,3 +28,34 @@ In this code we choose different masking criteria. First, we apply a Galactic la
 
 
 Thus we create four sets of masked versions for all the three quasar samples.
+
+
+
+Step - 2
+
+Folder name : - renyi_entropy_mask_1
+Code 1 -  (renyi_data.ipynb)
+
+This code calculates the Renyi entropy of orders 1 through 5 for the three quasar samples after applying mask 1.
+
+
+Code 2 -  (renyi_random.ipynb)
+
+This code calculates the Renyi entropy of orders 1 through 5 for the randomized versions of the three quasar samples after applying mask 1.
+
+
+
+Step - 3
+
+Folder name : - entropy_dispersion_mask_1
+
+Code 1 -  (entropy_disp_data.ipynb)
+
+This code calculates the normalized entropy dispersion of orders 1 through 5 for the three quasar samples after applying mask 1.
+
+
+Code 2 -  (entropy_disp_rand.ipynb)
+
+This code calculates the normalized entropy dispersion of orders 1 through 5 for the randomized versions of the three quasar samples after applying mask 1.
+
+
