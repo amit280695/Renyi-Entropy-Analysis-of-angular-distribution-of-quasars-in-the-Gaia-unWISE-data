@@ -38,7 +38,8 @@ For each quasar sample, we save both the masked data and the indices of the popu
 
 
 After completing Step 1, we obtain four versions of masked data and corresponding populated pixel indices for each of the three quasar samples.
-###################################################################################################################################################################################################
+
+##################################################################################################################################################################################################
 
 
 Step - 2
