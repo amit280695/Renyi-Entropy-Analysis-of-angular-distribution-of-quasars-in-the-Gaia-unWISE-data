@@ -13,6 +13,7 @@ Code 2 - (masking_1.ipynb)
 
 In this code, we apply masking on these three different samples.
 First, we apply a Galactic latitude mask. Then, for each pixel at NSIDE 8, we examine its corresponding 64 subpixels at NSIDE 64 and retain only those NSIDE 8 pixels for which more than 90% of the sub pixels are filled. In this way we produce a cleaner sample.
+Along with the masked data for the three quasar samples we also save the pixel indices of the populated pixels of this masked data with NSIDE = 8 
 
 Code 3 - (masking_2.ipynb)
 
