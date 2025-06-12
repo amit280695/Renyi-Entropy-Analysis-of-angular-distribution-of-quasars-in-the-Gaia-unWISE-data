@@ -17,8 +17,8 @@ Along with the masked data for the three quasar samples, we also save the pixel 
 
 Code 3 - (masking_2.ipynb)
 
-Same goal as Code 2, aim to create cleaner samples. Here, we apply a circular mask centered at l = 0 and b = 0 and subtending a solid angle of 4 sr in addition to the mask applied in the code 2.
-Along with the masked data for the three quasar samples we also save the pixel indices of the populated pixels of this masked data with NSIDE = 8.
+Same goal as Code 2, aim to create cleaner samples. Here, we apply a circular mask centered at l = 0 and b = 0 and subtending a solid angle of 4 sr in addition to the mask applied in code 2.
+Along with the masked data for the three quasar samples, we also save the pixel indices of the populated pixels of this masked data with NSIDE = 8.
 
 Code 4 - (masking_3.ipynb)
 
