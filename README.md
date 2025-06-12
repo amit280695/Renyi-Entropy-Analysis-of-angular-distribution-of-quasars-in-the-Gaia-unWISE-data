@@ -14,21 +14,24 @@ Code 2 - (masking_1.ipynb)
 In this code, we apply a masking procedure to three different quasar samples. First, we apply a Galactic latitude cut. Then, for each NSIDE = 8 pixel, we examine its 64 corresponding subpixels at NSIDE = 64. We retain only those NSIDE = 8 pixels where more than 90% of the subpixels are populated. This results in a cleaner and more reliable sample.
 For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 8.
 Any analysis using this masked dataset must be performed at NSIDE = 8.
+
 Code 3 - (masking_2.ipynb)
 
 Here, we apply a circular mask centered at l = 0 and b = 0 and subtending a solid angle of 4 sr in addition to the mask applied in code 2.
-Along with the masked data for the three quasar samples, we also save the pixel indices of the populated pixels of this masked data with NSIDE = 8.
+For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 8.
+Any analysis using this masked dataset must be performed at NSIDE = 8.
 
 Code 4 - (masking_3.ipynb)
 
-In this code we use different masking criteria. Here we apply only the galactic latitude mask.
+In this code, we use different masking criteria. Here we apply only the galactic latitude mask. For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 64.
+Any analysis using this masked dataset must be performed at NSIDE = 64.
+
 
 Code 4 - (masking_4.ipynb)
 
-In this code we choose different masking criteria. First, we apply a Galactic latitude mask. In addition to this we apply a circular mask centered at l = 0 and b = 0 and subtending a solid angle of 4 sr.
+In this code, we apply multiple masking criteria. First, a Galactic latitude mask is used. Additionally, we apply a circular mask centered at Galactic coordinates l=0 degree, b=0 degree, covering a solid angle of 4 steradians.
+For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 64. Any analysis using this masked dataset must be performed at NSIDE = 64.
 
-
-Thus we create four sets of masked versions for all the three quasar samples.
 
 
 
