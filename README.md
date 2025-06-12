@@ -48,18 +48,20 @@ Folder name: - renyi_entropy_mask_1
 
 Code 1 -  (renyi_data.ipynb)
 
-This code calculates the Renyi entropy of orders 1 through 5 for the three quasar samples after applying mask 1.
+This code calculates the Renyi entropy of orders 1 to 5.
 
 
 Code 2 -  (renyi_random.ipynb)
 
-This code calculates the Renyi entropy of orders 1 through 5 for the randomized versions of the three quasar samples after applying mask 1.
+This code calculates the Renyi entropy of orders 1 to 5.
 
+Code 3 - (plot.ipynb)
 
+This code produces Figure 4 in the paper by accumulating the results of the code 1 and code 2
 
 Step - 3
 
-Folder name : - entropy_dispersion_mask_1
+Folder name: - entropy_dispersion_mask_1
 
 Code 1 -  (entropy_disp_data.ipynb)
 
