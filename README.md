@@ -41,7 +41,7 @@ After completing Step 1, we obtain four versions of masked data and correspondin
 
 Step - 2
 
-Folder name : - renyi_entropy_mask_1
+Folder name: - renyi_entropy_mask_1
 
 Code 1 -  (renyi_data.ipynb)
 
