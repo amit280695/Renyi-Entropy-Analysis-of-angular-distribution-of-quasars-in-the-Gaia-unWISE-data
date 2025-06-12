@@ -62,7 +62,7 @@ This code produces Figure 4 in the paper by accumulating the results of the code
 
 In Step 2, we perform the full Renyi entropy calculation for all four masking cases: Maskings 1 and 2 with NSIDE = 8, and Maskings 3 and 4 with NSIDE = 64. The necessary inputs for Masks 2, 3, and 4 are already included in the code as commented lines; these can be uncommented one by one to obtain the output for each masking as needed. 
 
-###########################################################################################################################################################################################
+##################################################################################################################################################################################################
 
 
 
