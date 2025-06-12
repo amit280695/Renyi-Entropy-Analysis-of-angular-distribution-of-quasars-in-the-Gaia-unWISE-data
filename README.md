@@ -31,7 +31,7 @@ In this code, we use different masking criteria. Here we apply only the galactic
 Any analysis using this masked dataset must be performed at NSIDE = 64.
 
 
-Code 4 - (masking_4.ipynb)
+Code 5 - (masking_4.ipynb)
 
 In this code, we apply multiple masking criteria. First, a Galactic latitude mask is used. Additionally, we apply a circular mask centered at Galactic coordinates l=0 degree, b=0 degree, covering a solid angle of 4 steradians.
 For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 64. Any analysis using this masked dataset must be performed at NSIDE = 64.
@@ -42,6 +42,7 @@ After completing Step 1, we obtain four versions of masked data and correspondin
 Step - 2
 
 Folder name : - renyi_entropy_mask_1
+
 Code 1 -  (renyi_data.ipynb)
 
 This code calculates the Renyi entropy of orders 1 through 5 for the three quasar samples after applying mask 1.
