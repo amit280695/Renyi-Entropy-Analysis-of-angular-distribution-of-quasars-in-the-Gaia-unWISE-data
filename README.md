@@ -57,7 +57,7 @@ This code calculates the Renyi entropy of orders 1 to 5.
 
 Code 3 - (plot.ipynb)
 
-This code produces Figure 4 in the paper by accumulating the results of the code 1 and code 2
+This code produces Figure 4 in the paper by accumulating the results of codes 1 and 2.
 
 
 In Step 2, we perform the full Renyi entropy calculation for all four masking cases: Maskings 1 and 2 with NSIDE = 8, and Maskings 3 and 4 with NSIDE = 64. The necessary inputs for Masks 2, 3, and 4 are already included in the code as commented lines; these can be uncommented one by one to obtain the output for each masking as needed. 
@@ -78,5 +78,9 @@ This code calculates the normalized entropy dispersion of orders 1 through 5 for
 Code 2 -  (entropy_disp_rand.ipynb)
 
 This code calculates the normalized entropy dispersion of orders 1 through 5 for the randomized versions of the three quasar samples after applying mask 1.
+
+Code 3 - (plot.ipynb)
+
+This code produces Figure 4 in the paper by accumulating the results of codes 1 and 2.
 
 
