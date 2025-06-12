@@ -2,6 +2,7 @@ Link for downloading data - https://zenodo.org/records/10403370
 You can download quaia_G20.0.fits and quaia_G20.5.fits.
 These two files contain the Quaia Quasar catalog, having two different apparent magnitude (G-band) cuts. In our analysis, we use quaia_G20.0.fits.
 Download quaia_G20.0.fits data and keep it in the folder data_prep.
+
 Step - 1 
 
 Folder name: - data_prep
