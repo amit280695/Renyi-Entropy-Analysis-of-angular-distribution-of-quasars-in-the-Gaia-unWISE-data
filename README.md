@@ -44,12 +44,18 @@ After completing Step 1, we obtain four versions of masked data and correspondin
 
 Step - 2
 
-Folder name: - renyi_entropy_mask_1
+Folder name: - renyi_entropy
 
 Code 1 -  (renyi_data.ipynb)
 
 This code calculates the Renyi entropy of orders 1 to 5.
 
+In this code      1. f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat'
+              2. f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat'
+              3. f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat'
+              4. f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat'
+              
+If line 1 is uncommented along with setting NSIDE = 8, the code produces results for Masking 1. Similarly, uncommenting line 2 with NSIDE = 8 gives results for Masking 2. For Maskings 3 and 4, uncommenting lines 3 or 4 respectively—along with setting NSIDE = 64 produces the corresponding outputs. Each configuration must be run separately by modifying the input path and NSIDE values. 
 
 Code 2 -  (renyi_random.ipynb)
 
@@ -61,6 +67,7 @@ This code produces Figure 4 in the paper by accumulating the results of codes 1 
 
 
 In Step 2, we perform the full Renyi entropy calculation for all four masking cases: Maskings 1 and 2 with NSIDE = 8, and Maskings 3 and 4 with NSIDE = 64. The necessary inputs for Masks 2, 3, and 4 are already included in the code as commented lines; these can be uncommented one by one to obtain the output for each masking as needed. 
+
 
 ##################################################################################################################################################################################################
 
