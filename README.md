@@ -94,12 +94,34 @@ Folder name: - entropy_dispersion_mask_1
 
 Code 1 -  (entropy_disp_data.ipynb)
 
-This code calculates the normalized entropy dispersion of orders 1 through 5 for the three quasar samples after applying mask 1.
+This code calculates the normalized entropy dispersion of orders 1 through 5 for the three quasar samples.
+
+In this code  
+1. f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat'
+
+2. f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat'
+              
+3. f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat'
+              
+4. f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat'
+              
+If line 1 is uncommented along with setting NSIDE = 8, the code produces results for Masking 1. Similarly, uncommenting line 2 with NSIDE = 8 gives results for Masking 2. For Maskings 3 and 4, uncommenting lines 3 or 4 respectively—along with setting NSIDE = 64 produces the corresponding outputs. Each configuration must be run separately by modifying the input path and NSIDE values. 
 
 
 Code 2 -  (entropy_disp_rand.ipynb)
 
-This code calculates the normalized entropy dispersion of orders 1 through 5 for the randomized versions of the three quasar samples after applying mask 1.
+This code calculates the normalized entropy dispersion of orders 1 through 5 for the randomized versions of the three quasar samples after.
+
+In this code  
+1. f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask1/non_zero_pix_id_' + str(k+1) + '.dat'
+
+2. f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask2/non_zero_pix_id_' + str(k+1) + '.dat'
+              
+3. f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask3/non_zero_pix_id_' + str(k+1) + '.dat'
+              
+4. f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask4/non_zero_pix_id_' + str(k+1) + '.dat'
+              
+If line 1 is uncommented along with setting NSIDE = 8, the code produces results for Masking 1. Similarly, uncommenting line 2 with NSIDE = 8 gives results for Masking 2. For Maskings 3 and 4, uncommenting lines 3 or 4 respectively—along with setting NSIDE = 64 produces the corresponding outputs. Each configuration must be run separately by modifying the input path and NSIDE values.
 
 Code 3 - (plot.ipynb)
 
