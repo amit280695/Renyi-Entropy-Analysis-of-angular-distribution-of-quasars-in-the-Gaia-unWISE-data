@@ -50,9 +50,12 @@ Code 1 -  (renyi_data.ipynb)
 
 This code calculates the Renyi entropy of orders 1 to 5.
 
-In this code      1. f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat'
+In this code  1. f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat'
+
               2. f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat'
+              
               3. f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat'
+              
               4. f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat'
               
 If line 1 is uncommented along with setting NSIDE = 8, the code produces results for Masking 1. Similarly, uncommenting line 2 with NSIDE = 8 gives results for Masking 2. For Maskings 3 and 4, uncommenting lines 3 or 4 respectively—along with setting NSIDE = 64 produces the corresponding outputs. Each configuration must be run separately by modifying the input path and NSIDE values. 
