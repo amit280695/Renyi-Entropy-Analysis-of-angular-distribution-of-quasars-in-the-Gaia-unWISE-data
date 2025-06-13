@@ -125,6 +125,6 @@ If line 1 is uncommented along with setting NSIDE = 8, the code produces results
 
 Code 3 - (plot.ipynb)
 
-This code produces Figure 4 in the paper by accumulating the results of codes 1 and 2.
+This code produces Figure 5 in the paper by accumulating the results of codes 1 and 2.
 
 
