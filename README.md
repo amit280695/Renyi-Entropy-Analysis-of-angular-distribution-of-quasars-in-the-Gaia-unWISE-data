@@ -21,15 +21,15 @@ Any analysis using this masked dataset must be performed at NSIDE = 8.
 
 Code 3 - (masking_2.ipynb)
 
-Here, we apply a circular mask centered at l = 0 and b = 0 and subtending a solid angle of 4 sr in addition to the mask applied in code 2.
-For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 8.
-Any analysis using this masked dataset must be performed at NSIDE = 8.
-
-Code 4 - (masking_3.ipynb)
-
 In this code, we use different masking criteria. Here we apply only the galactic latitude mask. For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 64.
 Any analysis using this masked dataset must be performed at NSIDE = 64.
 
+
+Code 4 - (masking_3.ipynb)
+
+Here, we apply a circular mask centered at l = 0 and b = 0 and subtending a solid angle of 4 sr in addition to the mask applied in code 2.
+For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 8.
+Any analysis using this masked dataset must be performed at NSIDE = 8.
 
 Code 5 - (masking_4.ipynb)
 
