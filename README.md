@@ -90,7 +90,7 @@ In Step 2, we perform the full Renyi entropy calculation for all four masking ca
 
 Step - 3
 
-Folder name: - entropy_dispersion_mask_1
+Folder name: - entropy_dispersion
 
 Code 1 -  (entropy_disp_data.ipynb)
 
