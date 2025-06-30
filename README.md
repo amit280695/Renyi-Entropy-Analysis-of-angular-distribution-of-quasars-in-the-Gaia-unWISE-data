@@ -19,7 +19,7 @@ In this code, we apply a masking procedure to three different quasar samples. Fi
 For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 8.
 Any analysis using this masked dataset must be performed at NSIDE = 8.
 
-Code 3 - (masking_3.ipynb)
+Code 3 - (masking_2.ipynb)
 
 Here, we apply a circular mask centered at l = 0 and b = 0 and subtending a solid angle of 4 sr in addition to the mask applied in code 2.
 For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 8.
@@ -43,7 +43,10 @@ In this code
 1. f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat'
 
 2. f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat'
-              
+
+3. f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat'
+
+4. f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat'
 
 If line 1 is uncommented along with setting NSIDE = 8, the code produces results for Masking 1. Similarly, uncommenting line 2 with NSIDE = 8 gives results for Masking 2. 
 
@@ -55,6 +58,11 @@ In this code
 1. f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask1/non_zero_pix_id_' + str(k+1) + '.dat'
 
 2. f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask2/non_zero_pix_id_' + str(k+1) + '.dat'
+
+3. f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask3/non_zero_pix_id_' + str(k+1) + '.dat'
+
+4. f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask4/non_zero_pix_id_' + str(k+1) + '.dat'
+
               
 If line 1 is uncommented along with setting NSIDE = 8, the code produces results for Masking 1. Similarly, uncommenting line 2 with NSIDE = 8 gives results for Masking 2. 
 
@@ -82,6 +90,11 @@ In this code
 1. f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat'
 
 2. f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat'
+
+3. f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat'
+
+4. f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat'
+
               
 If line 1 is uncommented along with setting NSIDE = 8, the code produces results for Masking 1. Similarly, uncommenting line 2 with NSIDE = 8 gives results for Masking 2. 
 
@@ -93,6 +106,10 @@ In this code
 1. f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask1/non_zero_pix_id_' + str(k+1) + '.dat'
 
 2. f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask2/non_zero_pix_id_' + str(k+1) + '.dat'
+
+3. f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask3/non_zero_pix_id_' + str(k+1) + '.dat'
+
+4. f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask4/non_zero_pix_id_' + str(k+1) + '.dat'
               
 If line 1 is uncommented along with setting NSIDE = 8, the code produces results for Masking 1. Similarly, uncommenting line 2 with NSIDE = 8 gives results for Masking 2. 
 
