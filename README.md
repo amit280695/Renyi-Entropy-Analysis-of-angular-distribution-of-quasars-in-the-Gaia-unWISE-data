@@ -1,7 +1,7 @@
 Link for downloading data - https://zenodo.org/records/10403370
 
 You can download quaia_G20.0.fits and quaia_G20.5.fits.
-These two files contain the Gaia-unWISE Quasar catalog, having two different apparent magnitude (G-band) cuts. quaia_G20.0.fits is limited to magnitude G < 20.0, which is considered a cleaner sample. And quaia_G20.5.fits is limited to magnitude G < 20.0. We use the G < 20.0 quasar sample in our analysis, so we download quaia_G20.0.fits file.
+These two files contain the Gaia-unWISE Quasar catalog, having two different apparent magnitude (G-band) cuts. quaia_G20.0.fits is limited to magnitude G < 20.0, which is considered a cleaner sample. And quaia_G20.5.fits is limited to magnitude G < 20.5. We use the G < 20.0 quasar sample in our analysis, so we download quaia_G20.0.fits file.
 
 Step - 1 
 
