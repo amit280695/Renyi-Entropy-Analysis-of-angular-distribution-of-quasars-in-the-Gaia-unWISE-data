@@ -56,29 +56,13 @@ This code calculates the Renyi entropy of orders 1 to 5.
 
 To calculate the Rényi entropy of orders 1 to 5 for a specific masking configuration, uncomment the corresponding input file line (f_in) and assign the appropriate NSIDE value:
 
-    Masking 1:
-    Uncomment
-    f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat'
-    and use
-    NSIDE = 8
+Masking 1: Uncomment f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat' and use NSIDE = 8
 
-    Masking 2:
-    Uncomment
-    f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat'
-    and use
-    NSIDE = 8
+Masking 2: Uncomment f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat' and use NSIDE = 8
 
-    Masking 3:
-    Uncomment
-    f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat'
-    and use
-    NSIDE = 64
+Masking 3: Uncomment f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat' and use NSIDE = 64
 
-    Masking 4:
-    Uncomment
-    f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat'
-    and use
-    NSIDE = 64
+Masking 4: Uncomment f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat' and use NSIDE = 64
 
 Choose the appropriate combination based on which masking configuration you want to analyze.
  
