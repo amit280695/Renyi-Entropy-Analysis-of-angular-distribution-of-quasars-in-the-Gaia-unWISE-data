@@ -5,10 +5,10 @@ These two files contain the Gaia-unWISE Quasar catalog, having two different app
 
 Step - 1 
 
+Folder name: - data_prep
+
 Download quaia_G20.0.fits data and keep it in the folder data_prep.
 
-
-Folder name: - data_prep
 
 Code 1 -  (data_prep.ipynb)
 In this code, we divide the entire quasar distribution data into three different samples having different redshift ranges. 
