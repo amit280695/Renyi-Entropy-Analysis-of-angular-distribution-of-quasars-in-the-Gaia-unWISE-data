@@ -53,9 +53,7 @@ Folder name: - renyi_entropy
 
 Code 1 -  (renyi_data.ipynb)
 
-This code calculates the Renyi entropy of orders 1 to 5.
-
-This code calculates the Renyi entropy of orders 1 to 5.
+This code calculates the Renyi entropy of orders 1 to 5 for different masked versions.
 
 To calculate the Rényi entropy of orders 1 to 5 for a specific masking configuration, uncomment the corresponding input file line (f_in) and assign the appropriate NSIDE value:
 
