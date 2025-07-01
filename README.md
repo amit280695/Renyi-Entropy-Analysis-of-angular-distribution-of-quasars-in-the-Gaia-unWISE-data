@@ -99,37 +99,38 @@ Folder name: - entropy_dispersion
 
 Code 1 -  (entropy_disp_data.ipynb)
 
-This code calculates the normalized entropy dispersion of orders 1 through 5 for the three quasar samples.
+This code calculates the normalized entropy dispersion of orders 1 to 5 for the three quasar samples.
 
-In this code  
-1. f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat'
+To calculate the normalized entropy dispersion of orders 1 through 5 for a specific masking configuration, uncomment the corresponding input file line (f_in) and assign the appropriate NSIDE value:
 
-2. f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat'
+Masking 1: Uncomment f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat' and use NSIDE = 8
 
-3. f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat'
+Masking 2: Uncomment f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat' and use NSIDE = 8
 
-4. f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat'
+Masking 3: Uncomment f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat' and use NSIDE = 64
 
-              
-If line 1 is uncommented along with setting NSIDE = 8, the code produces results for Masking 1. Similarly, uncommenting line 2 with NSIDE = 8 gives results for Masking 2. 
+Masking 4: Uncomment f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat' and use NSIDE = 64
+
 
 Code 2 -  (entropy_disp_rand.ipynb)
 
-This code calculates the normalized entropy dispersion of orders 1 through 5 for the randomized versions of the three quasar samples after.
+This code calculates the normalized entropy dispersion of orders 1 to 5 for the randomized versions of the three quasar samples after.
 
-In this code  
-1. f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask1/non_zero_pix_id_' + str(k+1) + '.dat'
+To use a specific masking configuration, uncomment the corresponding input file lines for f_in and f1, and set the appropriate NSIDE value as follows:
 
-2. f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask2/non_zero_pix_id_' + str(k+1) + '.dat'
+For Masking 1, uncomment: f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask1/non_zero_pix_id_' + str(k+1) + '.dat' and use NSIDE = 8
 
-3. f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask3/non_zero_pix_id_' + str(k+1) + '.dat'
+For Masking 2, uncomment: f_in = '../data_prep/mask2/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask2/non_zero_pix_id_' + str(k+1) + '.dat' and use NSIDE = 8
 
-4. f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask4/non_zero_pix_id_' + str(k+1) + '.dat'
-              
-If line 1 is uncommented along with setting NSIDE = 8, the code produces results for Masking 1. Similarly, uncommenting line 2 with NSIDE = 8 gives results for Masking 2. 
+For Masking 3, uncomment: f_in = '../data_prep/mask3/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask3/non_zero_pix_id_' + str(k+1) + '.dat' and use NSIDE = 64
+
+For Masking 4, uncomment: f_in = '../data_prep/mask4/masked_sample_' + str(n+1) + '.dat' and f1 = '../data_prep/mask4/non_zero_pix_id_' + str(k+1) + '.dat' and use NSIDE = 64
+
+Choose the appropriate combination depending on the masking setup you wish to analyze.
+
 
 Code 3 - (plot.ipynb)
 
-This code produces Figure ... in the paper by combining the results of codes 1 and 2.
+This code produces the figure, which shows the mean normalized entropy dispersion as a function of comoving radial distance and the significance ratio as a function of comoving radial distance
 
 
