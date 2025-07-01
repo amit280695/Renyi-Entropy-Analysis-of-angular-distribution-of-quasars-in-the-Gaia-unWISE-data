@@ -131,6 +131,14 @@ Choose the appropriate combination depending on the masking setup you wish to an
 
 Code 3 - (plot.ipynb)
 
-This code produces the figure, which shows the mean normalized entropy dispersion as a function of comoving radial distance and the significance ratio as a function of comoving radial distance
+This code produces the figure, which shows the mean normalized entropy dispersion as a function of comoving radial distance and the significance ratio as a function of comoving radial distance.
+
+###########################################################################################################################################################################################################################################
+
+Step - 4
+
+Folder name: - conv_ norm_entr_disp
+
+This code calculates the convergence of the normalized entropy dispersion for random mocks, that how many mocks are enough to take in our analysis 
 
 
