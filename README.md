@@ -39,7 +39,7 @@ Any analysis using this masked dataset must be performed at NSIDE = 64.
 
 
 
-After completing Step 1, we obtain two versions of masked data and corresponding populated pixel indices for each of the three quasar samples.
+After completing Step 1, we obtain four versions of masked data and corresponding populated pixel indices for each of the three quasar samples.
 
 ##################################################################################################################################################################################################
 
