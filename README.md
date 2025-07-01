@@ -7,8 +7,7 @@ Step - 1
 
 Folder name: - data_prep
 
-Download quaia_G20.0.fits data and keep it in the folder data_prep.
-
+Download the quaia_G20.0.fits file and place it in the data_prep directory.
 
 Code 1 -  (data_prep.ipynb)
 In this code, we divide the entire quasar distribution data into three different samples having different redshift ranges. 
