@@ -136,9 +136,9 @@ This code produces the figure, which shows the mean normalized entropy dispersio
 
 Step - 4
 
-Code - (conv_entropy_dispersion_rand.ipynb)
-
 Folder name: - conv_ norm_entr_disp
+
+Code - (conv_entropy_dispersion_rand.ipynb)
 
 This code evaluates the convergence of the normalized entropy dispersion across random mock samples to determine how many mocks are sufficient for reliable analysis.
 
