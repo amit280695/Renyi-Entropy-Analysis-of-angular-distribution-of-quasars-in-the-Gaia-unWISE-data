@@ -27,14 +27,16 @@ Any analysis using this masked dataset must be performed at NSIDE = 8.
 
 Code 4 - (masking_3.ipynb)
 
-Actually, we want to analyze the mask 1 data for all three quasar samples with different nside of 64. Here we have to prepare a separate masking data set because we don't have to apply the completeness criteria as the pixel area of each pixel in nside = 64 is (1/64) times the area of each pixel in nside = 8.
+Actually, we want to analyze the mask 1 data for all three quasar samples with different nside of 64. Here we have to prepare a separate masking data set because we don't have to apply the completeness criteria, as the pixel area of each pixel in nside = 64 is (1/64) times the area of each pixel in nside = 8.
 In this code, we apply only a Galactic latitude cut. For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 64.
 
 Any analysis using this masked dataset must be performed at NSIDE = 64.
 
 Code 5 - (masking_4.ipynb)
 
-Here, we apply a circular mask centered at l = 0 and b = 0 and subtending a solid angle of 4 sr in addition to the mask applied in code 4.
+Actually, we want to analyze the mask 2 data for all three quasar samples with a different nside of 64. Here we have to prepare a separate masking data set because we don't have to apply the completeness criteria as the pixel area of each pixel in nside = 64 is (1/64) times the area of each pixel in nside = 8.
+
+Here, we apply a Galactic latitude cut and circular mask centered at l = 0 and b = 0 and subtending a solid angle of 4 sr in addition to the mask applied in code 4.
 For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 64.
 Any analysis using this masked dataset must be performed at NSIDE = 64.
 
