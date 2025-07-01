@@ -138,7 +138,7 @@ Step - 4
 
 Folder name: - conv_ norm_entr_disp
 
-This code calculates the convergence of the normalized entropy dispersion for random mocks, that how many mocks are enough to take in our analysis 
+This code evaluates the convergence of the normalized entropy dispersion across random mock samples to determine how many mocks are sufficient for reliable analysis.
 
 
 ########################################################################################################################################################################################
