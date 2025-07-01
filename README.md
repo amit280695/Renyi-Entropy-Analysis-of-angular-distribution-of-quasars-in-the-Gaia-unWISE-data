@@ -142,3 +142,11 @@ Folder name: - conv_ norm_entr_disp
 This code calculates the convergence of the normalized entropy dispersion for random mocks, that how many mocks are enough to take in our analysis 
 
 
+########################################################################################################################################################################################
+
+Required Python Packages - 
+This code requires the following Python packages, all of which are available in the Anaconda distribution: numpy, pandas, matplotlib, healpy, astropy, scipy
+
+If you are using Anaconda, these can be installed (if not already available) via: conda install numpy pandas matplotlib healpy astropy scipy
+
+Alternatively, if you're using pip: pip install numpy pandas matplotlib healpy astropy scipy
