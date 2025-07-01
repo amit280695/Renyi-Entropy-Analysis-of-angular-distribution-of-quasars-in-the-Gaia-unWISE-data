@@ -27,7 +27,8 @@ Any analysis using this masked dataset must be performed at NSIDE = 8.
 
 Code 4 - (masking_3.ipynb)
 
-In this code, we apply another masking procedure to three different quasar samples. We apply only a Galactic latitude cut. For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 64.
+Actually, we want to analyze the mask 1 data for all three quasar samples with different nside of 64. Here we have to prepare a separate masking data set because we don't have to apply the completeness criteria as the pixel area of each pixel in nside = 64 is (1/64) times the area of each pixel in nside = 8.
+In this code, we apply only a Galactic latitude cut. For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 64.
 
 Any analysis using this masked dataset must be performed at NSIDE = 64.
 
