@@ -85,7 +85,7 @@ Choose the appropriate combination depending on the masking setup you wish to an
 
 Code 3 - (plot.ipynb)
 
-This code produces Figure .... in the paper by combining the results of codes 1 and 2.
+This code produces the figure, which shows the variation of Renyi entropy with comoving radial distance for different entropy orders, 1 to 5, for all three masked quasar samples and their randomized versions.
 
 
 ##################################################################################################################################################################################################
