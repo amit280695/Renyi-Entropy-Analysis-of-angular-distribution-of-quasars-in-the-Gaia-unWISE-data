@@ -25,6 +25,19 @@ Here, we apply a circular mask centered at l = 0 and b = 0 and subtending a soli
 For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 8.
 Any analysis using this masked dataset must be performed at NSIDE = 8.
 
+Code 4 - (masking_3.ipynb)
+
+In this code, we apply another masking procedure to three different quasar samples. We apply only a Galactic latitude cut. For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 64.
+
+Any analysis using this masked dataset must be performed at NSIDE = 64.
+
+Code 5 - (masking_4.ipynb)
+
+Here, we apply a circular mask centered at l = 0 and b = 0 and subtending a solid angle of 4 sr in addition to the mask applied in code 4.
+For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 64.
+Any analysis using this masked dataset must be performed at NSIDE = 64.
+
+
 
 After completing Step 1, we obtain two versions of masked data and corresponding populated pixel indices for each of the three quasar samples.
 
@@ -68,7 +81,7 @@ If line 1 is uncommented along with setting NSIDE = 8, the code produces results
 
 Code 3 - (plot.ipynb)
 
-This code produces Figure 4 in the paper by combining the results of codes 1 and 2.
+This code produces Figure .... in the paper by combining the results of codes 1 and 2.
 
 
 In Step 2, we perform the full Renyi entropy calculation for all two masking cases: Maskings 1 and 2 with NSIDE = 8. The necessary inputs for Mask 2 are already included in the code as commented lines; these can be uncommented one by one to obtain the output for each masking as needed. 
@@ -115,6 +128,6 @@ If line 1 is uncommented along with setting NSIDE = 8, the code produces results
 
 Code 3 - (plot.ipynb)
 
-This code produces Figure 5 in the paper by combining the results of codes 1 and 2.
+This code produces Figure ... in the paper by combining the results of codes 1 and 2.
 
 
