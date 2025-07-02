@@ -1,47 +1,46 @@
-Link for downloading data - https://zenodo.org/records/10403370
+# Renyi Entropy Analysis of angular distribution of quasars in the Gaia-unWISE data
 
-You can download quaia_G20.0.fits and quaia_G20.5.fits.
-These two files contain the Gaia-unWISE Quasar catalog, having two different apparent magnitude (G-band) cuts. quaia_G20.0.fits is limited to magnitude G < 20.0, which is considered a cleaner sample. And quaia_G20.5.fits is limited to magnitude G < 20.5. We use the G < 20.0 quasar sample in our analysis, so we download quaia_G20.0.fits file.
+This repository contains the full set of codes used in our analysis of large-scale anisotropy in the angular distribution of quasars from the Gaia-unWISE catalogue. The results are presented in our paper "Revealing a transitional epoch of large-scale cosmic anisotropy in the quasar Distribution" (arXiv:)
+
+Data Access:
+The Gaia-unWISE quasar catalogue is publicly available on Zenodo: https://zenodo.org/records/10403370
+
+You can download two versions of the Gaia–unWISE quasar catalogue: quaia_G20.0.fits and quaia_G20.5.fits, corresponding to apparent magnitude cuts of G<20.0 and G<20.5, respectively. The G<20.0 sample (quaia_G20.0.fits) offers higher purity and is used throughout our analysis.
+
+Please place the downloaded file in the data_prep/ directory before proceeding.
 
 Step - 1 
 
 Folder name: - data_prep
 
-Download the quaia_G20.0.fits file and place it in the data_prep directory.
-
 Code 1 -  (data_prep.ipynb)
-In this code, we divide the entire quasar distribution data into three different samples having different redshift ranges. 
+This code divides the full quasar dataset into three separate samples, each corresponding to a different redshift range as defined in Table-I of the article.
 
 Code 2 - (masking_1.ipynb)
 
-In this code, we apply a masking procedure to three different quasar samples. First, we apply a Galactic latitude cut. Then, for each NSIDE = 8 pixel, we examine its 64 corresponding subpixels at NSIDE = 64. We retain only those NSIDE = 8 pixels where more than 90% of the subpixels are populated. This results in a cleaner and more reliable sample.
-For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 8.
-Any analysis using this masked dataset must be performed at NSIDE = 8.
+This code applies a masking procedure to each of the three quasar samples. This is labelled as Mask 1 in our analysis. It first imposes a Galactic latitude cut, then evaluates the completeness of each NSIDE = 8 pixel by checking its corresponding subpixels at NSIDE = 64. Pixels are retained only if more than 90% of their subpixels contain quasars, ensuring a cleaner and more reliable dataset. For each sample, the script saves both the masked data and the indices of the populated NSIDE = 8 pixels.
+
+All subsequent analyses using this masked dataset should be performed at NSIDE = 8. 
 
 Code 3 - (masking_2.ipynb)
 
-Here, we apply a circular mask centered at l = 0 and b = 0 and subtending a solid angle of 4 sr in addition to the mask applied in code 2.
-For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 8.
-Any analysis using this masked dataset must be performed at NSIDE = 8.
+This code applies an additional circular mask centered at l=0 degree, b=0 degree, covering a solid angle of 4 steradian, on top of the masking procedure described in Code 2.  This is labelled as Mask 2 in our analysis. For each quasar sample, it outputs the masked dataset along with the indices of the populated NSIDE = 8 pixels.
+
+All subsequent analyses using this masked dataset should be conducted at NSIDE = 8.
 
 Code 4 - (masking_3.ipynb)
 
-Actually, we want to analyze the mask 1 data for all three quasar samples with different nside of 64. Here we have to prepare a separate masking data set because we don't have to apply the completeness criteria, as the pixel area of each pixel in nside = 64 is (1/64) times the area of each pixel in nside = 8.
-In this code, we apply only a Galactic latitude cut. For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 64.
+This code prepares a version of the Mask 1 dataset for all three quasar samples at a higher HEALPix resolution of NSIDE = 64. At this resolution, each pixel covers (1/64)^th the area of a pixel at NSIDE = 8, making subpixel completeness checks unnecessary. Therefore, we apply only a Galactic latitude cut without additional completeness filtering. For each sample, the script outputs the masked data and the corresponding populated pixel indices at NSIDE = 64.
 
-Any analysis using this masked dataset must be performed at NSIDE = 64.
+All subsequent analyses using this masked dataset should be conducted at NSIDE = 64.
 
 Code 5 - (masking_4.ipynb)
 
-Actually, we want to analyze the mask 2 data for all three quasar samples with a different nside of 64. Here we have to prepare a separate masking data set because we don't have to apply the completeness criteria as the pixel area of each pixel in nside = 64 is (1/64) times the area of each pixel in nside = 8.
+This code generates a high-resolution version of the Mask 2 dataset for all three quasar samples at NSIDE = 64. At this resolution, each pixel has (1/64)^th the area of a pixel at NSIDE = 8, so no subpixel completeness criterion is applied. The masking includes both a Galactic latitude cut and a circular exclusion region centered at l=0 degree, b=0 degree, covering a solid angle of 4 steradian, in line with the masking procedure used in Code 3. For each sample, the script saves the masked data along with the indices of the populated NSIDE = 64 pixels.
 
-Here, we apply a Galactic latitude cut and circular mask centered at l = 0 and b = 0 and subtending a solid angle of 4 sr in addition to the mask applied in code 4.
-For each quasar sample, we save both the masked data and the indices of the populated pixels at NSIDE = 64.
-Any analysis using this masked dataset must be performed at NSIDE = 64.
+All subsequent analyses using this dataset should be performed at NSIDE = 64.
 
-
-
-After completing Step 1, we obtain four versions of masked data and corresponding populated pixel indices for each of the three quasar samples.
+Upon completing Step 1, you will have four masked versions each corresponding to a different masking scheme along with the associated populated pixel indices for all three quasar samples.
 
 ##################################################################################################################################################################################################
 
@@ -54,7 +53,7 @@ Code 1 -  (renyi_data.ipynb)
 
 This code calculates the Renyi entropy of orders 1 to 5 for different masked versions.
 
-To calculate the Rényi entropy of orders 1 to 5 for a specific masking configuration, uncomment the corresponding input file line (f_in) and assign the appropriate NSIDE value:
+To calculate the Renyi entropy of orders 1 to 5 for a specific masking configuration, uncomment the corresponding input file line (f_in) and assign the appropriate NSIDE value:
 
 Masking 1: Uncomment f_in = '../data_prep/mask1/masked_sample_' + str(n+1) + '.dat' and use NSIDE = 8
 
@@ -69,7 +68,7 @@ Choose the appropriate combination based on which masking configuration you want
 
 Code 2 -  (renyi_random.ipynb)
 
-This code calculates the Rényi entropy of orders 1 to 5 for randomized, masked quasar samples.
+This code calculates the Renyi entropy of orders 1 to 5 for randomized, masked quasar samples.
 
 To use a specific masking configuration, uncomment the corresponding input file lines for f_in and f1, and set the appropriate NSIDE value as follows:
 
@@ -88,7 +87,7 @@ Code 3 - (plot.ipynb)
 This code produces the figure, which shows the variation of Renyi entropy with comoving radial distance for different entropy orders, 1 to 5, for all three masked quasar samples and their randomized versions.
 
 
-##################################################################################################################################################################################################
+#########################################################################################################################################################################################################
 
 
 
@@ -132,22 +131,22 @@ Code 3 - (plot.ipynb)
 
 This code produces the figure, which shows the mean normalized entropy dispersion as a function of comoving radial distance and the significance ratio as a function of comoving radial distance.
 
-###########################################################################################################################################################################################################################################
+#############################################################################################################################################################################################################
 
 Step - 4
 
-Folder name: - conv_ norm_entr_disp
+Folder name: - conv_norm_entr_disp
 
 Code - (conv_entropy_dispersion_rand.ipynb)
 
-This code evaluates the convergence of the normalized entropy dispersion across random mock samples to determine how many mocks are sufficient for reliable analysis.
+This code evaluates the convergence of the normalized entropy dispersion across random mock samples to determine how many mocks are sufficient for a reliable analysis.
 
 
 ########################################################################################################################################################################################
 
 Required Python Packages - 
-This code requires the following Python packages, all of which are available in the Anaconda distribution: numpy, pandas, matplotlib, healpy, astropy, scipy
+These codes require the following Python packages, all of which are available in the Anaconda distribution: numpy, pandas, matplotlib, healpy, astropy, scipy
 
 If you are using Anaconda, these can be installed (if not already available) via: conda install numpy pandas matplotlib healpy astropy scipy
 
-Alternatively, if you're using pip: pip install numpy pandas matplotlib healpy astropy scipy
+Alternatively, if you are using pip: pip install numpy pandas matplotlib healpy astropy scipy
