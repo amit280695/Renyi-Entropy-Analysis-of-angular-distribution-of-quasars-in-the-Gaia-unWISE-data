@@ -1,6 +1,6 @@
 # Renyi Entropy Analysis of angular distribution of quasars in the Gaia-unWISE data
 
-This repository contains the full set of codes used in our analysis of large-scale anisotropy in the angular distribution of quasars from the Gaia-unWISE catalogue. The results are presented in our paper "Revealing a transitional epoch of large-scale cosmic anisotropy in the quasar Distribution" (arXiv:)
+This repository contains the full set of codes used in our analysis of large-scale anisotropy in the angular distribution of quasars from the Gaia-unWISE catalogue. The results are presented in our paper "Revealing a transitional epoch of large-scale cosmic anisotropy in the quasar Distribution" (arXiv:2507.02835)
 
 Data Access:
 The Gaia-unWISE quasar catalogue is publicly available on Zenodo: https://zenodo.org/records/10403370
